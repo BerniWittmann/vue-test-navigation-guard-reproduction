@@ -13,6 +13,11 @@ export default {
   name: 'home',
   components: {
     HelloWorld
+  },
+
+  beforeRouteUpdate(to, from, next) {
+    console.warn('called')
+    next()
   }
 }
 </script>
